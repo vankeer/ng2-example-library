@@ -8,10 +8,6 @@
     "sourceMap": true,
     "declaration": true
   },
-  "files": [
-    "node_modules/angular2/typings/browser.d.ts",
-    "ng2-example-library.ts"
-  ],
   "exclude": [
     "node_modules"
   ]
