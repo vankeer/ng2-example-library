@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {URLSearchParams, Jsonp} from '@angular/http';
-import {Observable} from "rxjs/Observable";
+import {IObservable} from "rxjs/Observable";
 import "rxjs/add/operator/map";
 
 @Injectable()
@@ -8,7 +8,7 @@ export class WikiService{
   constructor(private jsonp: Jsonp) {}
 
   // source: https://github.com/born2net/ng2Boilerplate/blob/master/src/services/WikiService.ts
-  search (term: string): Observable<any[]> {
+  search (term: string): IObservable<any[]> {
     var search = new URLSearchParams();
     search.set('action', 'opensearch');
     search.set('search', term);
